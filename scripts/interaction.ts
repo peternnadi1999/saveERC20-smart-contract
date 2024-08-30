@@ -1,10 +1,10 @@
 import { ethers } from "hardhat";
 
 async function main() {
-  const web3CXITokenAddress = "0xaDBA987955Eac146f1983062100046be46e632fA";
+  const web3CXITokenAddress = "0xe336d36FacA76840407e6836d26119E1EcE0A2b4";
   const web3CXI = await ethers.getContractAt("IERC20", web3CXITokenAddress);
 
-  const saveERC20ContractAddress = "0xD410219f5C87247d3F109695275A70Da7805f1b1";
+  const saveERC20ContractAddress = "0x95CA0a568236fC7413Cd2b794A7da24422c2BBb6";
   const saveERC20 = await ethers.getContractAt(
     "ISaveERC20",
     saveERC20ContractAddress
@@ -22,7 +22,7 @@ async function main() {
   const depositAmount = ethers.parseUnits("150", 18);
   const depositTx = await saveERC20.deposit(depositAmount);
 
-  console.log(depositTx);
+//   console.log(depositTx);
 
   depositTx.wait();
 

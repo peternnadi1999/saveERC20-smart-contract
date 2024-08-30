@@ -1,6 +1,6 @@
 import { buildModule } from "@nomicfoundation/hardhat-ignition/modules";
 
-const tokenAddress = "0x17aB05351fC94a1a67Bf3f56DdbB941aE6c63E25";
+const tokenAddress = "0xe336d36FacA76840407e6836d26119E1EcE0A2b4";
 
 const SaveERC20Module = buildModule("SaveERC20Module", (m) => {
   const save = m.contract("SaveERC20", [tokenAddress]);
@@ -10,4 +10,4 @@ const SaveERC20Module = buildModule("SaveERC20Module", (m) => {
 
 export default SaveERC20Module;
 
-// Deployed SaveERC20: 0x52C84043CD9c865236f11d9Fc9F56aa003c1f922
+// Deployed SaveERC20: 0x95CA0a568236fC7413Cd2b794A7da24422c2BBb6
